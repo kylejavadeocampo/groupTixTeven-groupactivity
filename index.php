@@ -1,7 +1,11 @@
 <?php
 include "db.php";
 
+<<<<<<< HEAD
 $sql = "SELECT * FROM employee ORDER BY employee_id ASC";
+=======
+$sql = "SELECT * FROM employee ORDER BY employee_id DESC";
+>>>>>>> f738022b7c61c2fc991c74339bd43db7b3a33c81
 $result = $conn->query($sql);
 ?>
 
@@ -62,7 +66,10 @@ $result = $conn->query($sql);
                             <th>Email</th>
                             <th>Department</th>
                             <th>Salary</th>
+<<<<<<< HEAD
                             <th>Actions</th>
+=======
+>>>>>>> f738022b7c61c2fc991c74339bd43db7b3a33c81
                         </tr>
 
                     </thead>
@@ -107,6 +114,7 @@ $result = $conn->query($sql);
                                     ₱<?= number_format($employee['salary'], 2) ?>
                                 </td>
 
+<<<<<<< HEAD
                                 <form method="POST">
                                     <td>
                                         <a class="btn btn-warning" href="edit_employee.php?id=<?php echo $employee['employee_id'] ?>">Edit</a>
@@ -115,6 +123,8 @@ $result = $conn->query($sql);
                                     </td>
                                 </form>
 
+=======
+>>>>>>> f738022b7c61c2fc991c74339bd43db7b3a33c81
                             </tr>
 
                         <?php endwhile; ?>

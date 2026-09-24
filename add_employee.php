@@ -161,9 +161,13 @@ if (isset($_POST['save'])) {
                             </label>
 
                             <input
+<<<<<<< HEAD
                                 type="tel"
                                 pattern="[0-9]{11}"
                                 maxlength="11"
+=======
+                                type="text"
+>>>>>>> f738022b7c61c2fc991c74339bd43db7b3a33c81
                                 name="contact_no"
                                 class="form-control"
                                 placeholder="e.g. 09123456789"
